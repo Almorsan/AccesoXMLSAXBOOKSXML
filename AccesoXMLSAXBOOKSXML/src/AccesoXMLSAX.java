@@ -8,6 +8,11 @@ public class AccesoXMLSAX {
     SAXParser parser;
 
     public int parsearXMLconLibrosSAXhandler(File f) {
+        //con este método parseamos un archivo xml a sax mediante
+        //un objeto de tipo file pasado por parámetro y obtenemos la lista de libros con
+        //sus elementos (titulo, autor, fecha publicación...)
+        //utilizamos las clases SAXParser, SAXParserFactory y
+        //LibrosSAXhandler, la cual hemos configurado en este proyecto
 
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -25,6 +30,11 @@ public class AccesoXMLSAX {
     }
 
     public int parsearXMLconTitulosSAXhandler(File f) {
+        //con este método parseamos un archivo xml a sax mediante
+        //un objeto de tipo file pasado por parámetro y obtenemos 
+        //una lista de títulos.
+        //utilizamos las clases SAXParser, SAXParserFactory y
+        //TitulosSAXhandler, la cual hemos configurado en este proyecto
         try {
 
             SAXParserFactory factory = SAXParserFactory.newInstance();
